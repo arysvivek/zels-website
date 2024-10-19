@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scroll for Shop Now button
     const bannerButton = document.querySelector('#banner button');
     bannerButton.addEventListener('click', () => {
-        window.location.href = '#products';
+        document.querySelector('#products').scrollIntoView({ behavior: 'smooth' });
     });
 });

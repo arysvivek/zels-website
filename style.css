@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 header {
@@ -15,6 +14,10 @@ header {
     background-color: #fff;
     color: #333;
     border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo img {
@@ -47,7 +50,8 @@ nav ul li a:hover {
     background: url('images/banner.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 150px 20px;
+    margin-top: 70px; /* To adjust for fixed header */
 }
 
 #banner button {
@@ -119,4 +123,39 @@ footer a {
 
 footer a:hover {
     color: #fff;
+}
+
+/* Add your existing styles here */
+
+/* Additional styles for checkout, billing, and confirmation sections */
+#checkout, #billing, #confirmation {
+    padding: 20px;
+    margin-top: 70px; /* To adjust for fixed header */
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #333;
+    color: #ffcc00;
 }
